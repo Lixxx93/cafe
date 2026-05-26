@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>白沙灣海岸咖啡館 Coastal Café</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Noto Serif TC', serif;
+      scroll-behavior: smooth;
+      background-color: #F5EFE6;
+    }
+
+    h1, h2, h3, p, a, button {
+      font-family: 'Noto Serif TC', serif;
+    }
+
+    .hero-bg {
+      background-image:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop');
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .fade-in {
+      animation: fadeInUp 1s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-[#6B4F3B]/95 text-white z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <h1 class="text-2xl font-bold">
+        Coastal Café
+      </h1>
+
+      <ul class="hidden md:flex gap-8 text-sm">
+        <li><a href="#about" class="hover:text-yellow-300 transition">關於我們</a></li>
+        <li><a href="#events" class="hover:text-yellow-300 transition">本月活動</a></li>
+        <li><a href="#menu" class="hover:text-yellow-300 transition">菜單介紹</a></li>
+        <li><a href="#gallery" class="hover:text-yellow-300 transition">店內空間</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300 transition">聯絡資訊</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-6">
+
+    <div class="fade-in">
+
+      <h2 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        在咖啡香裡<br>
+        享受美好夜晚
+      </h2>
+
+      <p class="text-lg md:text-2xl mb-8">
+        海風、音樂與香味陪你度過放鬆時光
+      </p>
+
+      <a href="#events"
+      class="inline-block bg-[#8B6B4A] px-8 py-4 rounded-full text-lg shadow-xl hover:scale-105 transition duration-300">
+        立即查看活動
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 px-6">
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <img
+      src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1200&auto=format&fit=crop"
+      class="rounded-3xl shadow-2xl h-[500px] w-full object-cover">
+
+      <div>
+
+        <h2 class="text-4xl font-bold mb-6 text-[#6B4F3B]">
+          關於白沙灣海岸咖啡館
+        </h2>
+
+        <p class="leading-9 text-lg text-gray-700">
+          白沙灣海岸咖啡館是一間結合海景、花香與咖啡文化的小型咖啡館。
+          我們希望每位來到這裡的人，都能在海風與咖啡香中徹底放鬆身心。
+        </p>
+
+        <p class="leading-9 text-lg text-gray-700 mt-6">
+          店內使用自家烘焙咖啡豆，
+          並定期舉辦手沖咖啡體驗、香味挑選活動與音樂分享夜。
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="py-24 bg-[#E8DFD2] px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-4xl font-bold text-center text-[#6B4F3B] mb-14">
+        本月活動
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition duration-300">
+
+          <img
+          src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop"
+          class="h-60 w-full object-cover">
+
+          <div class="p-6">
+
+            <h3 class="text-2xl font-bold mb-3">
+              海邊音樂分享夜
+            </h3>
+
+            <p class="text-gray-600 mb-4">
+              每週六日 18:00
+            </p>
+
+            <p class="mb-6 text-gray-700">
+              在白沙灣海邊享受音樂與海風，
+              感受最舒服的放鬆時光。
+            </p>
+
+            <button class="bg-[#6B4F3B] text-white px-5 py-3 rounded-full hover:bg-[#8B6B4A] transition">
+              立即報名
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition duration-300">
+
+          <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop"
+          class="h-60 w-full object-cover">
+
+          <div class="p-6">
+
+            <h3 class="text-2xl font-bold mb-3">
+              手沖咖啡體驗課
+            </h3>
+
+            <p class="text-gray-600 mb-4">
+              每週六 14:00
+            </p>
+
+            <p class="mb-6 text-gray-700">
+              從磨豆到沖煮，
+              帶你體驗海邊咖啡館的精品手沖魅力。
+            </p>
+
+            <button class="bg-[#6B4F3B] text-white px-5 py-3 rounded-full hover:bg-[#8B6B4A] transition">
+              立即報名
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition duration-300">
+
+          <img
+          src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200&auto=format&fit=crop"
+          class="h-60 w-full object-cover">
+
+          <div class="p-6">
+
+            <h3 class="text-2xl font-bold mb-3">
+              香味與花朵分享會
+            </h3>
+
+            <p class="text-gray-600 mb-4">
+              每週日 19:30
+            </p>
+
+            <p class="mb-6 text-gray-700">
+              一起感受花香、咖啡香與海風交織的療癒氛圍。
+            </p>
+
+            <button class="bg-[#6B4F3B] text-white px-5 py-3 rounded-full hover:bg-[#8B6B4A] transition">
+              立即報名
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="py-24 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-4xl font-bold text-center text-[#6B4F3B] mb-14">
+        熱門菜單
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Coffee -->
+        <div class="bg-white rounded-3xl p-10 shadow-xl hover:-translate-y-2 transition duration-300">
+
+          <h3 class="text-3xl font-bold mb-8 text-[#6B4F3B]">
+            精品咖啡
+          </h3>
+
+          <div class="space-y-6">
+
+            <div>
+              <p class="font-semibold text-lg">☕ 美式咖啡 NT$120</p>
+              <p class="text-gray-500 mt-2">
+                經典醇厚口感，帶有淡淡堅果香氣。
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-lg">☕ 拿鐵 NT$150</p>
+              <p class="text-gray-500 mt-2">
+                濃縮咖啡與香濃牛奶完美融合。
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-lg">☕ 手沖單品 NT$180</p>
+              <p class="text-gray-500 mt-2">
+                每日精選咖啡豆，享受不同層次風味。
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-lg">☕ 海鹽焦糖拿鐵 NT$190</p>
+              <p class="text-gray-500 mt-2">
+                鹹甜交織的療癒口感，人氣推薦。
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-lg">☕ 榛果摩卡 NT$200</p>
+              <p class="text-gray-500 mt-2">
+                濃郁巧克力與榛果香氣的完美結合。
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Dessert -->
+        <div class="bg-white rounded-3xl p-10 shadow-xl hover:-translate-y-2 transition duration-300">
+
+          <h3 class="text-3xl font-bold mb-8 text-[#6B4F3B]">
+            手作甜點
+          </h3>
+
+          <div class="space-y-6">
+
+            <div>
+              <p class="font-semibold text-lg">🍰 巴斯克乳酪蛋糕 NT$160</p>
+              <p class="text-gray-500 mt-2">
+                濃郁乳酪香氣與微焦表層口感超人氣。
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-lg">🍰 提拉米蘇 NT$130</p>
+              <p class="text-gray-500 mt-2">
+                咖啡香與可可香氣交織的經典甜點。
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-lg">🍰 焦糖布丁 NT$120</p>
+              <p class="text-gray-500 mt-2">
+                滑順綿密口感搭配濃郁焦糖香氣。
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-lg">🍰 草莓奶油蛋糕 NT$150</p>
+              <p class="text-gray-500 mt-2">
+                新鮮草莓搭配柔滑鮮奶油，清爽不膩。
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-lg">🍰 藍莓千層蛋糕 NT$150</p>
+              <p class="text-gray-500 mt-2">
+                酸甜藍莓與細緻千層完美融合。
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-24 bg-[#E8DFD2] px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-4xl font-bold text-center text-[#6B4F3B] mb-14">
+        店內空間
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <img
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop"
+        class="rounded-3xl shadow-xl hover:scale-105 transition duration-300 h-80 w-full object-cover">
+
+        <img
+        src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200&auto=format&fit=crop"
+        class="rounded-3xl shadow-xl hover:scale-105 transition duration-300 h-80 w-full object-cover">
+
+        <img
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop"
+        class="rounded-3xl shadow-xl hover:scale-105 transition duration-300 h-80 w-full object-cover">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Activity Info -->
+  <section class="py-20 bg-[#D9E7F2] px-6">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+      <h2 class="text-4xl font-bold text-[#6B4F3B] mb-10">
+        活動資訊
+      </h2>
+
+      <div class="grid md:grid-cols-4 gap-6">
+
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <h3 class="text-2xl font-bold mb-3">日期時間</h3>
+          <p>每週六日</p>
+          <p>上午 8:00 開始</p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <h3 class="text-2xl font-bold mb-3">地點</h3>
+          <p>新北市石門區白沙灣海水浴場旁</p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <h3 class="text-2xl font-bold mb-3">費用</h3>
+          <p>每人低消 NT$120</p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <h3 class="text-2xl font-bold mb-3">交通方式</h3>
+          <p>自行前往</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Notice -->
+  <section class="py-20 px-6 bg-[#F5EFE6]">
+
+    <div class="max-w-5xl mx-auto text-center">
+
+      <h2 class="text-4xl font-bold text-[#6B4F3B] mb-8">
+        注意事項
+      </h2>
+
+      <div class="bg-white rounded-3xl shadow-xl p-10 text-lg leading-10">
+
+        <p>• 請攜帶愉悅放鬆的心</p>
+        <p>• 建議穿著輕便舒適服裝</p>
+        <p>• 海邊風較大，請注意保暖</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Register -->
+  <section class="py-20 bg-[#D9E7F2] px-6 text-center">
+
+    <div class="max-w-4xl mx-auto">
+
+      <h2 class="text-4xl font-bold text-[#6B4F3B] mb-8">
+        線上報名
+      </h2>
+
+      <p class="text-lg mb-8 text-gray-700">
+        歡迎一起來享受海景、咖啡與音樂的療癒時光。
+      </p>
+
+      <a href="https://forms.g00gle.com/xxxx"
+      target="_blank"
+      class="inline-block bg-[#8B6B4A] text-white px-10 py-5 rounded-full text-lg shadow-xl hover:scale-105 transition duration-300">
+
+        前往填寫報名表單
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6">
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+
+      <div>
+
+        <h2 class="text-4xl font-bold text-[#6B4F3B] mb-8">
+          聯絡我們
+        </h2>
+
+        <div class="space-y-5 text-lg">
+
+          <p>📍 新北市石門區德茂里下員坑33-6號（白沙灣海水浴場旁）</p>
+
+          <p>📞 02-1234-5678</p>
+
+          <p>✉️ coastalcafe@gmail.com</p>
+
+          <p>🕒 每週六日 上午 8:00 開始</p>
+
+        </div>
+
+      </div>
+
+      <iframe
+      class="rounded-3xl shadow-xl w-full h-80"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28922.571036361246!2d121.514798!3d25.285453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442b68c36a81c49%3A0xa760ce3e3caf572e!2z55m95rKZ54Gj5rW35rC05rW05aC0!5e0!3m2!1szh-TW!2stw!4v1716100000000!5m2!1szh-TW!2stw"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#6B4F3B] text-white text-center py-8">
+
+    <p class="mb-3">
+      © 2026 Coastal Café. All Rights Reserved.
+    </p>
+
+    <div class="flex justify-center gap-6 text-lg mb-4">
+
+      <a href="#" class="hover:text-yellow-300 transition">
+        Instagram
+      </a>
+
+      <a href="#" class="hover:text-yellow-300 transition">
+        Facebook
+      </a>
+
+    </div>
+
+    <a href="#top"
+    class="hover:text-yellow-300 transition">
+      ↑ 回到頂部
+    </a>
+
+  </footer>
+
+</body>
+</html>
